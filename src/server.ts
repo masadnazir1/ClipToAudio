@@ -6,7 +6,7 @@ import apiRoutes from "./routes/api";
 const app = express();
 const PORT = 4901;
 
-// Middleware
+//Middleware
 app.use(cors());
 app.use(express.json());
 
