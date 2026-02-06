@@ -4,8 +4,14 @@ import path from "path";
 import { jobQueue } from "./jobQueue";
 
 // Use system ffmpeg (more reliable than ffmpeg-static on some systems)
-ffmpeg.setFfmpegPath("/usr/bin/ffmpeg");
-ffmpeg.setFfprobePath("/usr/bin/ffprobe");
+//VPS
+ffmpeg.setFfmpegPath("/usr/local/bin/ffmpeg");
+//local
+// ffmpeg.setFfmpegPath("/usr/bin/ffmpeg");
+
+ffmpeg.setFfprobePath("/usr/local/bin/ffprobe");
+//local
+// ffmpeg.setFfprobePath("/usr/bin/ffprobe");
 
 export const processJob = (jobId: string, port: number) => {
   const job = jobQueue.getJob(jobId);
