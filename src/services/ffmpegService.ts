@@ -72,7 +72,7 @@ export const processJob = (jobId: string, port: number) => {
         console.log(`[Job ${jobId}] Conversion finished`);
 
         // Construct download URL
-        const downloadUrl = `https://vidfetch.galaxydev.pk/downloads/${outputFileName}`;
+        const downloadUrl = `https://vc.galaxydev.pk/downloads/${outputFileName}`;
 
         // Update job
         job.status = "completed";
